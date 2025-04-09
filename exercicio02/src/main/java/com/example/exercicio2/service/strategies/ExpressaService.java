@@ -1,0 +1,17 @@
+package com.example.exercicio2.service.strategies;
+
+import com.example.exercicio2.repository.FreteRepository;
+import org.springframework.stereotype.Component;
+
+@Component
+public class ExpressaService implements FreteRepository {
+    @Override
+    public double calcular(double peso){
+        return peso * 3.0;
+    }
+
+    @Override
+    public String modalidade(){
+        return "expressa";
+    }
+}
